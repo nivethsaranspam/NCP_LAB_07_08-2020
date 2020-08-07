@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+</head>
+<body>
+    <input type="text" name="name" id="name">
+    <input type="submit" id="submit" onclick="clickResponse()">
+</body>
+<script>
+    var arr=[]
+    var input = document.getElementById("name");
+        input.addEventListener("keyup", function (event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                arr.push(document.getElementById("name").value)
+                document.getElementById("name").value=""
+            }
+        });
+    
+
+    function clickResponse()
+    {
+        arr.sort()
+        alert(arr)
+        
+    }
+</script>
+</html>

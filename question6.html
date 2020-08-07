@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Question 6</title>
+</head>
+<script type="text/javascript">
+    function simpl() {
+        var p, r, t;
+        p = parseFloat(document.getElementById("principal").value);
+        r = parseFloat(document.getElementById("principal").value);
+        t = parseFloat(document.getElementById("principal").value);
+        var si = (p * r * t) / 100;
+        document.getElementById("answer").innerHTML=("SI: " + si);
+    }
+</script>
+
+<body>
+    <input type="number" id="principal">
+    <input type="number" id="rate">
+    <input type="number" id="time">
+    <input type="button"  value="Calculate Simple Interest" onclick="simpl()" />
+    <h1 id="answer">Simple Interest: Answer will be displayed here</h1>
+</body>
+
+</html>
